@@ -4,7 +4,7 @@ The objective of this project is to predict the future value of the stock using 
 
 <div align="center">
 
-  <img src="graphics/output_3_0.png">
+  <img src="graphics/modified/output_3_0.png">
 </div>
 
 Using this data, the key to predicting future stock value is by estimating the unknown parameters $\mu$ and $\sigma$. There are multiple ways in which these parameters can be estimated, and there are also multiple methods to predict the future stock value.
@@ -84,7 +84,7 @@ We use the estimators found in the previous section, set $S_0 = 10$ (same as giv
 
 <div align="center">
   
-  <img src="graphics/output_12_0.png">
+  <img src="graphics/modified/output_12_0.png">
 </div>
     
 Each experiment is subject to variation, so this does not guarantee the accuracy of the estimators found. However, from the given data, it is the most suitable option. Using the estimators, we are now ready to make predictions. We first simulate a possible future values using the two numberical methods: Euler-Maruyama method, and the Milstein method. 
@@ -98,7 +98,7 @@ Using these two methods, we can simulate future values.
 
 <div align="center">
   
-  <img src="graphics/output_16_0.png" width=400> <img src="graphics/output_16_1.png" width=400>
+  <img src="graphics/modified/output_16_0.png" width=400> <img src="graphics/modified/output_16_1.png" width=400>
 </div>
     
 We can see that although slightly different at times, the two methods behave in a very similar way. 
@@ -123,7 +123,7 @@ confidence_interval = [11.462554156937284, 18.89152089013519]
 We can also estimate the distribution over the final prediction value by performing Monte-Carlo simulation using the prediction methods discussed above. Using the Milstein method, we predict for the final value with 100,000 trials and plot the resulting data as a histogram. The vertical lines represent the lower 95\% confidence bound, the mean, and the upper 95\% confidence bound found using the analytic solution, respectively. 
 
 <div align="center">
-  <img src="graphics/output_22_1.png">
+  <img src="graphics/modified/output_22_1.png">
 </div>
 
 The resulting mean of the Monte-Carlo simulation is 14.8285, which is slightly different from the value found using the analytic solution, but that is to be expected since one is a result of discrete experimentation and the other continuous.
